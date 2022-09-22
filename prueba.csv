@@ -1,0 +1,7 @@
+Action Name|Evaluation|IDCondition|OperatorValue|Valor|Valor2
+Reload cache|A|A|Trigger|equals|Cambio en intervalo de items
+Reaccion contador triggers|A|A|Trigger name|contains|Triggers activos
+Telegram - Prueba Martina CustoPrueba|A and B|A|Problem supressed|No
+Telegram - Prueba Martina CustoPrueba|A and B|B|Host|equals|CustosPrueba
+Email - Prueba Martina DEDALUS|A and B|A|Problem supressed|No
+Email - Prueba Martina DEDALUS|A and B|B|Host|equals|Deda

@@ -1,0 +1,112 @@
+Action Name|Evaluation|ID|Condition|OperatorValue|Valor|Valor2
+Teelgram - Desconexión TE UPS Trans.SS2|A|A|Trigger|equals|{HOST.NAME} is unavailable by ICMP
+Telegram - Zabbix Server Reiniciado|A|A|Trigger|equals|{HOST.NAME} has just been restarted
+Telegram - ServVarios|A and B and (C or D)|A|Problem supressed|No
+Telegram - ServVarios|A and B and (C or D)|B|Trigger severity|equals|High
+Telegram - ServVarios|A and B and (C or D)|C|Host|equals|privadossh
+Telegram - ServVarios|A and B and (C or D)|D|Host|equals|DNS primario y DHCP
+Email (NEW) - Control de temperatura|(A and B) and C|A|Event tag|equals|Temperatura
+Email (NEW) - Control de temperatura|(A and B) and C|B|Event tag|equals|Alerta
+Email (NEW) - Control de temperatura|(A and B) and C|C|Problem supressed|No
+Email - Alarmas OPP|A and B and C and D|A|Event tag|does not equal|MSSQL
+Email - Alarmas OPP|A and B and C and D|B|Problem supressed|No
+Email - Alarmas OPP|A and B and C and D|C|Trigger severity|is greater than or equals|Warning
+Email - Alarmas OPP|A and B and C and D|D|Hostgroup|equals|OPP
+Email - Alarmas OPP - Information|A and B and C|A|Problem supressed|No
+Email - Alarmas OPP - Information|A and B and C|B|Trigger severity|equals|Information
+Email - Alarmas OPP - Information|A and B and C|C|Hostgroup|equals|OPP
+PBX|A and B and C|A|Problem supressed|No
+PBX|A and B and C|B|Trigger severity|is greater than or equals|Average
+PBX|A and B and C|C|Hostgroup|equals|PBX
+Telegram - PruebaAction|A and B|A|Event tag value|equals|Tag Value: Prueba|Tag Name: Custos
+Telegram - PruebaAction|A and B|B|Problem supressed|No
+HTML - Alertas Zabbix Server|A and B and C|A|Event tag value|does not equal|Tag Value: False|Tag Name: Action
+HTML - Alertas Zabbix Server|A and B and C|B|Problem supressed|No
+HTML - Alertas Zabbix Server|A and B and C|C|Host|equals|Zabbix Server Presidencia
+HTML - Archivo de configuración modificado|A|A|Trigger name|contains|fue modificado
+Email - Fallo en el envio de SMS|A or B|A|Trigger|equals|SMS service is down
+Email - Fallo en el envio de SMS|A or B|B|Trigger|equals|Hay SMS encolados
+Telegram - Desconexión Core/Switches Acceso Tej|A and B and C and (D or E)|A|Problem supressed|No
+Telegram - Desconexión Core/Switches Acceso Tej|A and B and C and (D or E)|B|Trigger name|contains|is unavailable by ICMP
+Telegram - Desconexión Core/Switches Acceso Tej|A and B and C and (D or E)|D|Hostgroup|equals|SwitchesSMS
+Telegram - Desconexión Core/Switches Acceso Tej|A and B and C and (D or E)|E|Hostgroup|equals|Cores
+Telegram - Desconexión Core/Switches Acceso Tej|A and B and C and (D or E)|C|Trigger|does not equal|Disparar trace en falla ICMP ping
+Telegram - Temperatura UPS MonClima|A and B and (C or D)|A|Problem supressed|No
+Telegram - Temperatura UPS MonClima|A and B and (C or D)|B|Trigger name|contains|Temperatur
+Telegram - Temperatura UPS MonClima|A and B and (C or D)|C|Hostgroup|equals|UPS
+Telegram - Temperatura UPS MonClima|A and B and (C or D)|D|Hostgroup|equals|MonitoresDeClima
+Remote command - Reinicio TejP04SMSServer|A|A|Trigger|equals|Reinicio TejP04SMSServer
+Email - Email: to epedrana TejP04MclDC4|A and B|A|Problem supressed|No
+Email - Email: to epedrana TejP04MclDC4|A and B|B|Host|equals|TejP04MclDC4
+Email - Notificacion Problema Critico Aplicaciones Web|A and B and C|A|Problem supressed|No
+Email - Notificacion Problema Critico Aplicaciones Web|A and B and C|B|Trigger severity|equals|High
+Email - Notificacion Problema Critico Aplicaciones Web|A and B and C|C|Host template|equals|Template Web
+Telegram - Aviso UE01-MantenimientoEdilicio|A and B|B|Host|equals|TejSs2UPSTransformadores
+Telegram - Aviso UE01-MantenimientoEdilicio|A and B|A|Trigger|does not equal|Disparar trace en falla ICMP ping
+Email (NEW) - Alertas por Ping a DGE Redes - not ACK|(A and B) and C and D|B|Event tag value|equals|Tag Value: Redes|Tag Name: DGE
+Email (NEW) - Alertas por Ping a DGE Redes - not ACK|(A and B) and C and D|C|Event tag|equals|Ping
+Email (NEW) - Alertas por Ping a DGE Redes - not ACK|(A and B) and C and D|D|Problem supressed|No
+Email (NEW) - Alertas por Ping a DGE Redes - not ACK|(A and B) and C and D|A|Event tag value|contains|Tag Value: Email|Tag Name: Alerta
+Email (NEW) - Alertas a DGE Infraestructura Gral|A and B and C and D|A|Event tag value|equals|Tag Value: Infraestructura|Tag Name: DGE
+Email (NEW) - Alertas a DGE Infraestructura Gral|A and B and C and D|B|Event tag|does not equal|Ping
+Email (NEW) - Alertas a DGE Infraestructura Gral|A and B and C and D|C|Problem supressed|No
+Email (NEW) - Alertas a DGE Infraestructura Gral|A and B and C and D|D|Trigger severity|is greater than or equals|Warning
+Email (NEW) - Alertas a DGE Redes Gral|(A and B) and C and D|B|Event tag value|equals|Tag Value: Redes|Tag Name: DGE
+Email (NEW) - Alertas a DGE Redes Gral|(A and B) and C and D|C|Event tag|does not equal|Ping
+Email (NEW) - Alertas a DGE Redes Gral|(A and B) and C and D|D|Problem supressed|No
+Email (NEW) - Alertas a DGE Redes Gral|(A and B) and C and D|A|Event tag value|contains|Tag Value: Email|Tag Name: Alerta
+Email (NEW) - Alertas por Ping a DGE Infraestructura - ACK|A and B and C|A|Event tag value|equals|Tag Value: Infraestructura|Tag Name: DGE
+Email (NEW) - Alertas por Ping a DGE Infraestructura - ACK|A and B and C|B|Event tag|equals|Ping
+Email (NEW) - Alertas por Ping a DGE Infraestructura - ACK|A and B and C|C|Problem supressed|No
+Email (NEW) - Alertas por Ping a DGE Infraestructura - not ACK|A and B and C|A|Event tag value|equals|Tag Value: Infraestructura|Tag Name: DGE
+Email (NEW) - Alertas por Ping a DGE Infraestructura - not ACK|A and B and C|B|Event tag|equals|Ping
+Email (NEW) - Alertas por Ping a DGE Infraestructura - not ACK|A and B and C|C|Problem supressed|No
+Email (NEW) - Alertas por Ping a DGE Redes - ACK|(A and B) and C and D|B|Event tag value|equals|Tag Value: Redes|Tag Name: DGE
+Email (NEW) - Alertas por Ping a DGE Redes - ACK|(A and B) and C and D|C|Event tag|equals|Ping
+Email (NEW) - Alertas por Ping a DGE Redes - ACK|(A and B) and C and D|D|Problem supressed|No
+Email (NEW) - Alertas por Ping a DGE Redes - ACK|(A and B) and C and D|A|Event tag value|contains|Tag Value: Email|Tag Name: Alerta
+Telegram - Alertas para Guardia DGE Redes|(A and B) and C|B|Event tag value|equals|Tag Value: Redes|Tag Name: DGE
+Telegram - Alertas para Guardia DGE Redes|(A and B) and C|C|Problem supressed|No
+Telegram - Alertas para Guardia DGE Redes|(A and B) and C|A|Event tag value|contains|Tag Value: Telegram|Tag Name: Alerta
+Telegram - Alertas por tag SMS para Infraestructura - ex Vms de Correo Criticos|(A and B) and C|A|Event tag value|equals|Tag Value: Infraestructura|Tag Name: DGE
+Telegram - Alertas por tag SMS para Infraestructura - ex Vms de Correo Criticos|(A and B) and C|B|Event tag value|equals|Tag Value: SMS|Tag Name: Alerta
+Telegram - Alertas por tag SMS para Infraestructura - ex Vms de Correo Criticos|(A and B) and C|C|Problem supressed|No
+Telegram - Alertas para Guardia DGE Infraestructura|(A and B) and C|B|Event tag value|equals|Tag Value: Infraestructura|Tag Name: DGE
+Telegram - Alertas para Guardia DGE Infraestructura|(A and B) and C|C|Problem supressed|No
+Telegram - Alertas para Guardia DGE Infraestructura|(A and B) and C|A|Event tag value|contains|Tag Value: Telegram|Tag Name: Alerta
+Telegram - Alertas para DGE Redes Gral.|(A and B) and C|A|Event tag value|equals|Tag Value: Redes|Tag Name: DGE
+Telegram - Alertas para DGE Redes Gral.|(A and B) and C|B|Event tag value|equals|Tag Value: SMS|Tag Name: Alerta
+Telegram - Alertas para DGE Redes Gral.|(A and B) and C|C|Problem supressed|No
+Telegram - Alertas para Guardia OPP|A and B and C|B|Event tag|equals|OPP
+Telegram - Alertas para Guardia OPP|A and B and C|C|Problem supressed|No
+Telegram - Alertas para Guardia OPP|A and B and C|A|Event tag value|contains|Tag Value: Telegram|Tag Name: Alerta
+Email - Email: to VideoSeguridad|A and B and (C or D)|A|Event tag|equals|Ping
+Email - Email: to VideoSeguridad|A and B and (C or D)|B|Problem supressed|No
+Email - Email: to VideoSeguridad|A and B and (C or D)|C|Hostgroup|equals|NVR
+Email - Email: to VideoSeguridad|A and B and (C or D)|D|Hostgroup|equals|Cámaras de Seguridad
+Email - Alertas a DGE Infraestructura Respaldo DB|A and B and C and D|A|Event tag value|equals|Tag Value: Infraestructura Respaldo DB|Tag Name: DGE
+Email - Alertas a DGE Infraestructura Respaldo DB|A and B and C and D|B|Event tag|does not equal|Ping
+Email - Alertas a DGE Infraestructura Respaldo DB|A and B and C and D|C|Problem supressed|No
+Email - Alertas a DGE Infraestructura Respaldo DB|A and B and C and D|D|Trigger severity|is greater than or equals|Warning
+Trap Impresora|A and B|A|Trigger name|contains|Trap Recibida
+Trap Impresora|A and B|B|Hostgroup|equals|Impresoras DGE
+Telegram y Email - Alertas prodtew-dc3 y prodtew-dc4 para Guardia DGE Infraestructura|A and (B or C)|A|Problem supressed|No
+Telegram y Email - Alertas prodtew-dc3 y prodtew-dc4 para Guardia DGE Infraestructura|A and (B or C)|B|Trigger|equals|Free disk space is less than {$FS_HIGH:"C:"}% on volume C: ({ITEM.LASTVALUE})
+Telegram y Email - Alertas prodtew-dc3 y prodtew-dc4 para Guardia DGE Infraestructura|A and (B or C)|C|Trigger|equals|Free disk space is less than {$FS_HIGH:"C:"}% on volume C: ({ITEM.LASTVALUE})
+Telegram - Alertas SINAE|A and B and C|A|Problem supressed|No
+Telegram - Alertas SINAE|A and B and C|B|Trigger severity|is greater than or equals|High
+Telegram - Alertas SINAE|A and B and C|C|Hostgroup|equals|SINAE
+Trace por falta de ping|A and B|A|Trigger name|contains|ICMP
+Trace por falta de ping|A and B|B|Hostgroup|equals|Cores
+Trap equipo prodtea-sophosmail|A and B|A|Trigger name|contains|Trap
+Trap equipo prodtea-sophosmail|A and B|B|Host|equals|prodtea-sophosmail
+Telegram - Alerta Zabbix server Pando|A and (B or C)|A|Problem supressed|No
+Telegram - Alerta Zabbix server Pando|A and (B or C)|B|Host|equals|Enlace Zabbix Server Pando
+Telegram - Alerta Zabbix server Pando|A and (B or C)|C|Trigger|equals|No hay conexión a Internet
+Telegram - TejDc8ServerWLC|A and B and C|A|Problem supressed|No
+Telegram - TejDc8ServerWLC|A and B and C|C|Host|equals|TejDc8ServerWLC
+Telegram - TejDc8ServerWLC|A and B and C|B|Trigger|equals|{HOST.NAME} is unavailable by ICMP ({HOST.IP})
+Email - Impresora DGE SNMP|A and B and C|A|Event tag value|equals|Tag Value: DGE|Tag Name: Impresoras
+Email - Impresora DGE SNMP|A and B and C|C|Hostgroup|equals|Impresoras DGE
+Email - Impresora DGE SNMP|A and B and C|B|Problem supressed|No
+Reintento desde trigger|A|A|Trigger|equals|Reintento

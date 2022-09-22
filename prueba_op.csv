@@ -1,0 +1,11 @@
+Action Name|Evaluation|ID|Condition|OperatorValue|Valor|Valor2
+Reload cache|A|1-1 (Mensaje a usuario bla bla) |1h|A|Trigger|equals|Cambio en intervalo de items
+Email - Prueba Martina|A and B and C or D|1-1 (Mensaje a usuario bla bla) 2-2 (Mensaje a usuario bla bla) |15m|1h|A|Problem supressed|No
+Email - Prueba Martina|A and B and C or D|1-1 (Mensaje a usuario bla bla) 2-2 (Mensaje a usuario bla bla) |15m|1h|C|Hostgroup|equals|Martina
+Email - Prueba Martina|A and B and C or D|1-1 (Mensaje a usuario bla bla) 2-2 (Mensaje a usuario bla bla) |15m|1h|B|Trigger name|contains|Item Prueba diferente de 0
+Email - Prueba Martina|A and B and C or D|1-1 (Mensaje a usuario bla bla) 2-2 (Mensaje a usuario bla bla) |15m|1h|D|Host|equals|Martina
+Reaccion contador triggers|A|1-0 (Mensaje a usuario bla bla) |1m|A|Trigger name|contains|Triggers activos
+Telegram - Prueba Martina CustoPrueba|A and B|1-0 (Mensaje a usuario bla bla) |5m|A|Problem supressed|No
+Telegram - Prueba Martina CustoPrueba|A and B|1-0 (Mensaje a usuario bla bla) |5m|B|Host|equals|CustosPrueba
+Email - Prueba Martina DEDALUS|A and B|1-0 (Mensaje a usuario bla bla) |15m|A|Problem supressed|No
+Email - Prueba Martina DEDALUS|A and B|1-0 (Mensaje a usuario bla bla) |15m|B|Host|equals|Deda

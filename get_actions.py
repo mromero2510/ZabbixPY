@@ -185,7 +185,8 @@ if __name__ == "__main__":
     # AYUDA Y ARGUMENTOS
     args = Ayuda()
     # CONEXIONES
-    URLConn = "http://67.207.86.91/"
+    URLConn = "http://10.0.100.87/"
+    #URLConn = "http://67.207.86.91/"
     #URLConn = "http://10.231.13.68/"
     USRConn = args.user
     PASSWDConn = args.passwd
